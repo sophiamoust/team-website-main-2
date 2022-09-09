@@ -1,0 +1,269 @@
+body {
+  font-family: "Times New Roman", Times, serif, Arial, sans-serif;
+  font-size: 16px;
+  background: linear-gradient(141deg, lavender 0%, #c6b0c6 51%, lavender 75%);
+}
+
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.fa {
+  padding: 2px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.9;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 5px;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 grey;
+  padding: 16px;
+  text-align: center;
+  background-color: grey;
+  color: lavender;
+}
+
+.fa {
+  font-size: 50px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: lavender;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: purple;
+  color: navy;
+}
+
+.topnav a.active {
+  background-color: plum;
+  color: black;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a,
+  .topnav input[type="text"],
+  .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type="text"] {
+    border: 1px solid #ccc;
+  }
+}
+
+.fa-instagram {
+  width: 130px;
+  height: 130px;
+  background: linear-gradient(
+    to right,
+    #e6b970,
+    #da0707,
+    #a21a5c,
+    #9c2596,
+    #6d1b9a,
+    #7323d5
+  );
+}
+
+.paragraph {
+  text-align: center;
+  font-family: sans-serif;
+}
+.headings {
+  text-align: center;
+  font-family: sans-serif;
+}
+.quote {
+  font-size: x-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+.instagram {
+  text-align: center;
+}
+#iga {
+  font-size: large;
+}
+
+#insta {
+  text-align: center;
+}
+
+.slideshow-container {
+  position: relative;
+  background: grey;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: lavender;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: grey;
+  color: rgb(0, 0, 0);
+}
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ccc;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: lavender;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: grey;
+}
+
+q {
+  font-style: italic;
+}
+
+.author {
+  color: #6d1b9a;
+}
+
+.center {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 100s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 6;
+  }
+  to {
+    opacity: 8;
+  }
+}
+
+.image-full-width {
+  width: 100%;
+}
+
+ul {
+  font-size: larger;
+}
+
+#question {
+  text-align: right;
+}
+#commh1 {
+  text-align: center;
+}
